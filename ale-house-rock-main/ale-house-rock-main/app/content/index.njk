@@ -1,0 +1,10 @@
+---
+layout: beerlist.njk
+eleventyComputed:
+  title: "{% if pagination.pageNumber %}Page {{ (pagination.pageNumber + 1) }} of Beer reviews{% endif %}"
+  description: "{% if pagination.pageNumber %}Page {{ (pagination.pageNumber + 1) }} of {% endif %}Beer reviews. Honest reviews of beers from Mike Street"
+
+pagination:
+  data: data.beers
+  size: 40
+---
